@@ -31,9 +31,6 @@ function App() {
                 <label className='detail-about' >
                   <a href='#about'>About Us</a> </label> 
                 <div >
-                  <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                    <FontAwesomeIcon icon={faCartShopping} />{items}
-                  </button>
 
                 </div>
 
@@ -71,7 +68,7 @@ function App() {
       </div>
       <ProductSlide1 />
       <div id='category'>
-        <Productdetail getitem={additem} /></div>
+        <Productdetail /></div>
 
       <div className="modal fade" id="exampleModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog">

@@ -4,16 +4,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import data from './data';
 
 
-const Productdetail = ({getitem}) => {
-  const [quantity, setQuantity] = useState(0)
+const Productdetail = () => {
   const categoryitems = [...new Set(data.map((val) => val.category))]
   const [items, setItems] = useState(data);
 
-  const handlecart = () =>{
-  setQuantity(quantity+1);
-  toast.success('item added to cart');
-  getitem(quantity+1);
-  }
+  
      
   const handlefilter = (cat) => {
       const newitems  = data.filter((val) => val.category === cat);
@@ -42,11 +37,10 @@ const Productdetail = ({getitem}) => {
             <div className=' row mx-3 justify-content-center ' >
               <div className='Products' key={item.id} >
                 <img className='img' src={item.img} width={50} height={50}/>
-                <div style={{color:'red', fontFamily:'arial'}}>{item.price}</div>
-                <button onClick={()=>handlecart()} >Add to Cart</button>
+                <div style={{color:'red', fontFamily:'arial'}}>Value For Money</div>
               </div>
             </div>
-              ) )}
+              ))}
       
         </div>
     </div>
