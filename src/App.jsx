@@ -25,10 +25,12 @@ function App() {
         <nav className="navbar navbar-expand-lg bg-body-tertiary  ">
           <div className="container-fluid header-details " >
             <a className="navbar-brand ms-5 bold fs-1 name " href="#">Nursery Paradise</a>
-            <div className="collapse navbar-collapse" id="navbarSupportedContent">
-              <div className="d-flex" style={{fontFamily: 'sanserif' }} >
-                <label className="fs-4 mx-3 px-3" ><a style={{ textDecoration: 'none', color: 'grey' }} href='#category'>All Categories</a></label>
-                <label className="fs-4 mx-3 px-3" ><a href='#about'>About Us</a> </label> <div className='px-2' style={{ margin: 'auto', marginLeft: 10 }}>
+              <div className="d-flex detail-item"  style={{fontFamily: 'sanserif' }} >
+                <label className="detail-categories" >
+                  <a  href='#category'>All Categories</a></label>
+                <label className='detail-about' >
+                  <a href='#about'>About Us</a> </label> 
+                <div >
                   <button type="button" className="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     <FontAwesomeIcon icon={faCartShopping} />{items}
                   </button>
@@ -36,7 +38,6 @@ function App() {
                 </div>
 
 
-              </div>
             </div>
           </div>
         </nav>

@@ -75,46 +75,46 @@ const [errors,setErrors] = useState({
         },
       ), 
       toast.success("Email sent successfully")
-    ) : toast.warning("enter a valid details")
+    ) : ''
   };
         
   
 
 return (
-  <div className='formdetail' style={{fontSize:20, backdropFilter:'none', textShadow:'none'}}>
+  <div className='formdetail' style={{fontSize:'1rem', backdropFilter:'none', textShadow:'none'}}>
          <form ref={form} onSubmit={sendEmail}>
                   <div className='form' >
                     <label>Name 
-                        <input style={{fontSize:20}} 
+                        <input style={{fontSize:'1rem'}} 
                              type='text'
                              name='username' 
                              placeholder='Test'
                              value={values.username}  
                              onChange={handlechange}
                             />  
-                         <span style={{color:'red', fontSize:12, margin:0}}> {errors.username} </span>                  
+                         <span style={{color:'red', fontSize:'1rem', margin:0}}> {errors.username} </span>                  
 
                     </label>
                     <label>Email
-                        <input style={{fontSize:20}} 
+                        <input style={{fontSize:'1rem'}} 
                                type='email' 
                                name='email'
                                placeholder='test@gmail.com'
                                value={values.email}
                                onChange={handlechange } 
                                />
-                       <span style={{color:'red', fontSize:12, margin:0}}> {errors.email} </span>                  
+                       <span style={{color:'red', fontSize:'1rem', margin:0}}> {errors.email} </span>                  
 
                       </label>
                       
                       <label>Phone no 
-                        <input  style={{fontSize:20}} 
+                        <input  style={{fontSize:'1rem'}} 
                                 type='phno' 
                                 name='phno' 
                                 placeholder='123456789'
                                 onChange={handlechange}
                                   />
-                             <span style={{color:'red', fontSize:12, margin:0}}> {errors.phno} </span>                  
+                             <span style={{color:'red', fontSize:'1rem', margin:0}}> {errors.phno} </span>                  
                           </label><br />                   
 
                     <button className='btn btn-primary'style={{borderRadius:'20px'}} >Submit</button>                  
