@@ -9,7 +9,7 @@ const Productdetail = ({getitem}) => {
   const categoryitems = [...new Set(data.map((val) => val.category))]
   const [items, setItems] = useState(data);
 
-  function handlecart(){
+  const handlecart = () =>{
   setQuantity(quantity+1);
   toast.success('item added to cart');
   getitem(quantity+1);
@@ -43,7 +43,7 @@ const Productdetail = ({getitem}) => {
               <div className='Products' key={item.id} >
                 <img className='img' src={item.img} width={50} height={50}/>
                 <div style={{color:'red', fontFamily:'arial'}}>{item.price}</div>
-                <button onClick={handlecart} >Add to Cart</button>
+                <button onClick={()=>handlecart()} >Add to Cart</button>
               </div>
             </div>
               ) )}
