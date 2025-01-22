@@ -18,7 +18,7 @@ function App() {
       <div className='header ' >
         <nav className="navbar navbar-expand-lg bg-body-tertiary  ">
           <div className="container-fluid header-details " >
-            <a className="navbar-brand ms-5 bold fs-1 name " href="#">Nursery Paradise</a>
+            <a className="navbar-brand ms-5 bold fs-2 name " href="#">Nursery Paradise</a>
             <div className="d-flex detail-item" style={{ fontFamily: 'sanserif' }} >
             
                 <input type='checkbox' id='sidebar-active'/>
@@ -64,7 +64,7 @@ function App() {
                 <br />
               </div></div>
             <div className='right'>
-              <div>
+              <div style={{paddingTop:'20px'}}>
                 <Useform />
               </div>
             </div>

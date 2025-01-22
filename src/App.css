@@ -35,6 +35,8 @@ body {
 .main_content h1 {
   color: rgb(233, 182, 175);
   text-shadow: 0 0 4px black;
+  font-size: clamp(32px,3rem,4rem);
+
 }
 .detail-item{
 justify-content: end;
@@ -83,9 +85,6 @@ justify-content: end;
   padding-bottom: 5px
 }
 
-.mainpage .main_content h1 {
-  font-size: 4rem;
-}
 
 .detail {
   display: flex;
@@ -293,6 +292,7 @@ justify-content: end;
   background-size: cover;
 }
 @media screen and (max-width:768px) {
+
   .header-details {
     gap: 10%;
     justify-content: center;
@@ -301,8 +301,8 @@ justify-content: end;
   .main_content {
     padding-bottom: 50px;
     margin-top: 0;
-
   }
+
 
   .main_content .left {
     display: none;
